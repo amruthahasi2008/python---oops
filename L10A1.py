@@ -21,12 +21,12 @@ class playlist :
         else :
             print("no songs yet")
     def __del__(self) :
-        print{"{self.name} has been deleted"}
+        print("{self.name} has been deleted")
     
 my_playlist = playlist("road mix","pop")
 while True :
     print("\n1.add song  2. delete song  3. display songs 4. delete and quit")
-    choice = input("enter your choice")
+    choice = int(input("enter your choice"))
     if choice == 1 :
         song = input("enter song name")
         my_playlist.add(song)
